@@ -6,131 +6,123 @@
     <title>Space Games Studio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .warning-section {
-            background-color: #FFEB3B;
-            padding: 30px;
-            border-radius: 15px;
-            margin-top: 40px;
-            font-size: 16px;
-            color: #333;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-        .warning-section h2 {
-            font-size: 22px;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-        .warning-section p {
+        /* Stili generali */
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
-            font-size: 16px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .highlight-box {
-            background-color: #FFEB3B;
-            padding: 30px;
-            border-radius: 15px;
-            font-size: 16px;
-            color: #333;
-            width: 70%;
-            margin: 30px auto;
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
             text-align: center;
         }
+
+        /* Stili del titolo principale */
         h1.tos-title {
-            font-size: 36px; /* Grande come un titolo */
-            text-align: center;
-        }
-        .last-updated {
-            font-size: 16px; /* Più piccolo per il trafiletto */
-            text-align: center;
+            font-size: 36px;
+            margin-top: 40px;
             margin-bottom: 10px;
+            text-align: center;
+            font-weight: bold;
         }
+
+        /* Stili della sezione "Ultimo aggiornamento" */
+        .last-updated {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        /* Stili per la tabella dei contenuti */
         .toc {
             list-style-type: none;
-            padding-left: 0;
+            padding: 0;
+            margin: 20px 0;
+            text-align: left;
         }
+
         .toc li {
-            margin: 5px 0;
+            margin: 10px 0;
         }
+
         .toc-number {
             font-weight: bold;
         }
+
+        /* Stili per le sezioni */
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Box evidenziato */
+        .highlight-box {
+            background-color: #FFEB3B;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            color: #333;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <img src="https://i.imgur.com/8KSK1Vu.png" alt="Logo" class="logo">
-        <span class="navbar-text">Space Games Studio™</span>
-    </nav>
-    <div class="container780 left-vert">
+    <div class="container">
+        <!-- Titolo -->
         <h1 class="tos-title">TERMINI E CONDIZIONI - Space Games Studio</h1>
+        <!-- Ultimo aggiornamento -->
         <p class="last-updated">Ultimo aggiornamento: <span id="last-updated-date">28/11/2024</span></p>
-        
+
+        <!-- Tabella dei contenuti -->
         <ul class="toc">
-            <li><span class="toc-number">1.</span><a href="#1"> Chi siamo</a></li>
-            <li><span class="toc-number">2.</span><a href="#2"> Accettazione dei Termini</a></li>
+            <li><span class="toc-number">1.</span> <a href="#1">Chi siamo</a></li>
+            <li><span class="toc-number">2.</span> <a href="#2">Accettazione dei Termini</a></li>
             <ul>
-                <li><span class="toc-number">•</span><a href="#2_1"> Modifiche ai Termini</a></li>
+                <li><span class="toc-number">•</span> <a href="#2_1">Modifiche ai Termini</a></li>
             </ul>
-            <li><span class="toc-number">3.</span><a href="#3"> Uso consentito</a></li>
-            <li><span class="toc-number">4.</span><a href="#4"> Proprietà Intellettuale</a></li>
-            <li><span class="toc-number">5.</span><a href="#5"> Privacy e Dati</a></li>
-            <li><span class="toc-number">6.</span><a href="#6"> Account e sicurezza</a></li>
+            <li><span class="toc-number">3.</span> <a href="#3">Uso consentito</a></li>
+            <li><span class="toc-number">4.</span> <a href="#4">Proprietà Intellettuale</a></li>
+            <li><span class="toc-number">5.</span> <a href="#5">Privacy e Dati</a></li>
+            <li><span class="toc-number">6.</span> <a href="#6">Account e sicurezza</a></li>
         </ul>
-        
+
+        <!-- Sezione 1 -->
         <div id="1" class="section">
             <h2>Chi siamo</h2>
             <p>
                 <strong>Profile</strong> è un bot creato da <strong>Space Games Studio™</strong> per migliorare l'esperienza utente nei server Discord. Il bot offre funzionalità che consentono agli utenti di personalizzare il proprio profilo, guadagnare esperienza (XP), salire di livello e accumulare valute virtuali tramite l'interazione con la comunità.
             </p>
         </div>
-        
+
+        <!-- Sezione 2 -->
         <div id="2" class="section">
             <h2>Accettazione dei Termini</h2>
-            <p>Utilizzando il bot <strong>Profile</strong> di <strong>Space Games Studio™</strong>, accetti espressamente i Termini di Servizio riportati in questa pagina. Ti invitiamo a leggere attentamente questi termini prima di procedere.<br>Se decidi di utilizzare il bot, accetti di conformarti a tutte le disposizioni qui indicate, nonché alle Linee Guida della Comunità e ai <a href="https://discord.com/terms" class="custom-link" target="_blank" style="color: #00aaff; text-decoration: none; font-weight: bold;">Termini di Servizio Discord</a>.<br><br>
+            <p>Utilizzando il bot <strong>Profile</strong> di <strong>Space Games Studio™</strong>, accetti espressamente i Termini di Servizio riportati in questa pagina. Ti invitiamo a leggere attentamente questi termini prima di procedere.<br><br>
+                Se decidi di utilizzare il bot, accetti di conformarti a tutte le disposizioni qui indicate, nonché alle Linee Guida della Comunità e ai <a href="https://discord.com/terms" target="_blank" style="color: #00aaff; text-decoration: none; font-weight: bold;">Termini di Servizio Discord</a>.<br><br>
                 L'uso del bot è consentito solo a chi accetta queste norme. Se non sei d'accordo con una qualsiasi parte di questi termini, ti invitiamo a non utilizzare il bot. La violazione dei Termini di Servizio può comportare la sospensione o la disabilitazione del tuo profilo, a discrezione di <strong>Space Games Studio™</strong>.
             </p>
         </div>
-        
-        <div id="2_1" class="section_under">
+
+        <!-- Sezione 2.1 -->
+        <div id="2_1" class="section">
             <h2>Modifiche ai Termini</h2>
-            <p><strong>Space Games Studio™</strong> si riserva il diritto di modificare i presenti Termini di Servizio in qualsiasi momento. Le modifiche avranno effetto al momento della pubblicazione sul sito ufficiale o tramite altri canali di comunicazione. È responsabilità dell'utente rimanere aggiornato su tali modifiche.<br><br>In caso di modifiche significative, ti informeremo tramite il <a href="https://discord.gg/7CbcMRJwXD" class="custom-link" target="_blank" style="color: #00aaff; text-decoration: none; font-weight: bold;">Server Discord Ufficiale</a>. L'uso continuato del bot implica l'accettazione delle modifiche. Se non accetti le modifiche, ti consigliamo di cessare immediatamente l'uso del bot.
+            <p><strong>Space Games Studio™</strong> si riserva il diritto di modificare i presenti Termini di Servizio in qualsiasi momento. Le modifiche avranno effetto al momento della pubblicazione sul sito ufficiale o tramite altri canali di comunicazione. È responsabilità dell'utente rimanere aggiornato su tali modifiche.<br><br>
+                In caso di modifiche significative, ti informeremo tramite il <a href="https://discord.gg/7CbcMRJwXD" target="_blank" style="color: #00aaff; text-decoration: none; font-weight: bold;">Server Discord Ufficiale</a>. L'uso continuato del bot implica l'accettazione delle modifiche.
             </p>
-        </div>
-        
-        <div id="3" class="section">
-            <h2>Uso consentito</h2>
-            <p>L'uso del bot <strong>Profile</strong> è consentito solo per scopi legittimi e in conformità con i Termini di Servizio. Gli utenti devono utilizzare il bot in modo responsabile, rispettando tutte le leggi e i regolamenti applicabili, incluse le <a href="https://discord.com/guidelines" class="custom-link" target="_blank" style="color: #00aaff; text-decoration: none; font-weight: bold;">linee guida di Discord</a>. È vietato abusare o sfruttare il bot per scopi non previsti, come tentare di manipolare il sistema economico o compromettere la sicurezza del bot, con conseguente sospensione o ban dal servizio.</p>
         </div>
 
-        <div id="4" class="section">
-            <h2>Proprietà Intellettuale</h2>
-            <p> Tutti i contenuti di <strong>Profile Bot</strong>, compreso il codice sorgente, il design, le grafiche e le funzionalità, sono protetti dalle leggi sul diritto d'autore (Legge 22 aprile 1941, n. 633) e del Codice della Proprietà Industriale (D.Lgs. 10 febbraio 2005, n. 30). È vietato copiare, modificare, distribuire o replicare, in tutto o in parte, tali contenuti senza il nostro esplicito consenso.</p>
-        </div>
-        
-        <div id="5" class="section">
-            <h2>Privacy e Dati</h2>
-            <p><strong>Space Games Studio™</strong> si impegna a proteggere la privacy degli utenti che interagiscono con il bot <strong>Profile</strong>. Il bot non raccoglie informazioni personali private o sensibili, ma potrebbe raccogliere alcuni dati pubblici, tra cui:
-                <ul>
-                    <li>Nome utente</li>
-                    <li>ID utente</li>
-                    <li>Data di creazione dell'account</li>
-                    <li>Immagine del profilo</li>
-                    <li>Eventuali comandi e interazioni per il corretto funzionamento del bot</li>
-                </ul>
-                Queste informazioni non comprendono dati sensibili (come email o numeri di telefono). I dati raccolti non saranno mai venduti o condivisi con terze parti senza il consenso dell'utente.
-            </p>
-        </div>
-        
-        <div id="6" class="section">
-            <h2>Account e sicurezza</h2>
-            <p>La sicurezza degli account e la protezione dei dati sono fondamentali per una corretta esperienza utente. Ogni utente è responsabile della gestione sicura del proprio account e delle credenziali di accesso. Si consiglia di utilizzare una password forte e, se possibile, l'autenticazione a due fattori per evitare accessi non autorizzati. In caso di violazione della sicurezza dell'account, come la divulgazione di credenziali a terzi non autorizzati, è sotto la responsabilità dell'utente.</p>
-        </div>
-        
+        <!-- Box evidenziato -->
         <div class="highlight-box">
             <h2>Attenzione:</h2>
             <p>Per una migliore esperienza, assicurati di non utilizzare il bot in modo fraudolento o dannoso per altri utenti.</p>
