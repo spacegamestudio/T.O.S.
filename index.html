@@ -6,20 +6,138 @@
     <title>Space Games Studio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .warning-section {
-            background-color: #FFEB3B;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 30px;
-            font-size: 16px;
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
             color: #333;
         }
+
+        .navbar {
+            background-color: #333;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+
+        .navbar img {
+            width: 50px;
+        }
+
+        .navbar-text {
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .container780 {
+            max-width: 780px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .tos-title {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .toc {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 40px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        .toc a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            line-height: 1.6;
+        }
+
+        .section_under {
+            margin-left: 20px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .custom-link {
+            font-weight: bold;
+            color: #00aaff;
+        }
+
+        .warning-section {
+            background-color: #FFEB3B;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 40px;
+            font-size: 16px;
+            color: #333;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
         .warning-section h2 {
             font-weight: bold;
             margin-bottom: 10px;
+            font-size: 20px;
         }
+
         .warning-section p {
             margin: 0;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .container780 {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .navbar-text {
+                font-size: 20px;
+            }
+
+            .tos-title {
+                font-size: 28px;
+            }
+
+            .section h2 {
+                font-size: 22px;
+            }
         }
     </style>
 </head>
@@ -28,22 +146,22 @@
         <img src="https://i.imgur.com/8KSK1Vu.png" alt="Logo" class="logo">
         <span class="navbar-text">Space Games Studio™</span>
     </nav>
-    <div class="container780 left-vert">
-        <h1 class="tos-title">TERMS OF SERVICE - Profile </h1>
+    <div class="container780">
+        <h1 class="tos-title">TERMS OF SERVICE - Profile</h1>
         <p class="last-updated">Ultimo aggiornamento: <span id="last-updated-date">12/10/2024</span></p>
         
         <ul class="toc">
-            <li><span class="toc-number">1.</span><a href="#1"> Chi siamo</a></li>
-            <li><span class="toc-number">2.</span><a href="#2"> Accettazione dei Termini</a></li>
+            <li><span class="toc-number">1.</span><a href="#1">Chi siamo</a></li>
+            <li><span class="toc-number">2.</span><a href="#2">Accettazione dei Termini</a></li>
             <ul>
-                <li><span class="toc-number">•</span><a href="#2_1"> Modifiche ai Termini</a></li>
+                <li><span class="toc-number">•</span><a href="#2_1">Modifiche ai Termini</a></li>
             </ul>
-            <li><span class="toc-number">3.</span><a href="#3"> Uso consentito</a></li>
-            <li><span class="toc-number">4.</span><a href="#4"> Proprietà Intellettuale</a></li>
-            <li><span class="toc-number">5.</span><a href="#5"> Privacy e Dati</a></li>
-            <li><span class="toc-number">6.</span><a href="#6"> Account e sicurezza</a></li>
+            <li><span class="toc-number">3.</span><a href="#3">Uso consentito</a></li>
+            <li><span class="toc-number">4.</span><a href="#4">Proprietà Intellettuale</a></li>
+            <li><span class="toc-number">5.</span><a href="#5">Privacy e Dati</a></li>
+            <li><span class="toc-number">6.</span><a href="#6">Account e sicurezza</a></li>
         </ul>
-        
+
         <div id="1" class="section">
             <h2>Chi siamo</h2>
             <p>
@@ -53,20 +171,20 @@
         
         <div id="2" class="section">
             <h2>Accettazione dei Termini</h2>
-            <p>Utilizzando il bot <strong>Profile</strong> di <strong>Space Games Studio™</strong>, accetti implicitamente i presenti Termini di Servizio. È tua responsabilità leggere e comprendere questi termini prima di utilizzare il bot.<br>Se scegli di utilizzare il bot, accetti di rispettare tutte le disposizioni contenute nei Termini di Servizio, nonché le Linee Guida della Comunità e i <a href="https://discord.com/terms" class="custom-link" target="_blank" style="color: #00aaff; text-decoration: none; font-weight: bold;">Termini di Servizio Discord</a>.<br><br>
+            <p>Utilizzando il bot <strong>Profile</strong> di <strong>Space Games Studio™</strong>, accetti implicitamente i presenti Termini di Servizio. È tua responsabilità leggere e comprendere questi termini prima di utilizzare il bot.<br>Se scegli di utilizzare il bot, accetti di rispettare tutte le disposizioni contenute nei Termini di Servizio, nonché le Linee Guida della Comunità e i <a href="https://discord.com/terms" class="custom-link" target="_blank">Termini di Servizio Discord</a>.<br><br>
                 L'uso del bot è riservato agli utenti che accettano di conformarsi a queste norme. Se non sei d'accordo con uno qualsiasi di questi termini, ti invitiamo a non utilizzare il bot. Qualsiasi violazione dei Termini di Servizio può comportare restrizioni o la disabilitazione del tuo profilo, a discrezione di <strong>Space Games Studio™</strong>.
             </p>
         </div>
         
         <div id="2_1" class="section_under">
             <h2>Modifiche ai Termini</h2>
-            <p><strong>Space Games Studio™</strong> si riserva il diritto di modificare i presenti Termini di Servizio in qualsiasi momento. Tali modifiche entreranno in vigore al momento della pubblicazione sul sito ufficiale o attraverso altri canali di comunicazione. È tua responsabilità rimanere aggiornato su eventuali modifiche.<br><br>In caso di aggiornamenti significativi, ci impegniamo a notificarti tramite il <a href="https://discord.gg/7CbcMRJwXD" class="custom-link" target="_blank" style="color: #00aaff; text-decoration: none; font-weight: bold;">Server Discord Ufficiale</a>. Tuttavia, l'uso continuato del bot implica l'accettazione delle modifiche apportate. Se non accetti i termini aggiornati, ti consigliamo di cessare immediatamente l'uso del bot.
+            <p><strong>Space Games Studio™</strong> si riserva il diritto di modificare i presenti Termini di Servizio in qualsiasi momento. Tali modifiche entreranno in vigore al momento della pubblicazione sul sito ufficiale o attraverso altri canali di comunicazione. È tua responsabilità rimanere aggiornato su eventuali modifiche.<br><br>In caso di aggiornamenti significativi, ci impegniamo a notificarti tramite il <a href="https://discord.gg/7CbcMRJwXD" class="custom-link" target="_blank">Server Discord Ufficiale</a>. Tuttavia, l'uso continuato del bot implica l'accettazione delle modifiche apportate. Se non accetti i termini aggiornati, ti consigliamo di cessare immediatamente l'uso del bot.
             </p>
         </div>
-        
+
         <div id="3" class="section">
             <h2>Uso consentito</h2>
-            <p>L'uso del bot <strong>Profile</strong> di <strong>Space Games Studio™</strong> è riservato a scopi legittimi e conformi ai presenti Termini di Servizio. Gli utenti sono tenuti a utilizzare il bot in modo responsabile, rispettando tutte le leggi e regolamenti applicabili, incluse le <a href="https://discord.com/guidelines" class="custom-link" target="_blank" style="color: #00aaff; text-decoration: none; font-weight: bold;">linee guida di Discord</a>. Qualsiasi uso improprio, abuso o sfruttamento del bot per scopi diversi da quelli previsti, inclusi tentativi di manipolare il sistema economico globale o di violare la sicurezza del bot, è vietato e può comportare la sospensione del profilo o il ban dai nostri servizi.</p>
+            <p>L'uso del bot <strong>Profile</strong> di <strong>Space Games Studio™</strong> è riservato a scopi legittimi e conformi ai presenti Termini di Servizio. Gli utenti sono tenuti a utilizzare il bot in modo responsabile, rispettando tutte le leggi e regolamenti applicabili, incluse le <a href="https://discord.com/guidelines" class="custom-link" target="_blank">linee guida di Discord</a>. Qualsiasi uso improprio, abuso o sfruttamento del bot per scopi diversi da quelli previsti, inclusi tentativi di manipolare il sistema economico globale o di violare la sicurezza del bot, è vietato e può comportare la sospensione del profilo o il ban dai nostri servizi.</p>
         </div>
 
         <div id="4" class="section">
@@ -74,29 +192,10 @@
             <p> Tutti i contenuti di <strong>Profile Bot</strong>, inclusi il codice sorgente, il design, le grafiche e le funzionalità, sono protetti ai sensi della Legge sul Diritto d'Autore (Legge 22 aprile 1941, n. 633) e del Codice della Proprietà Industriale (D.Lgs. 10 febbraio 2005, n. 30). È severamente vietato copiare, modificare, distribuire o replicare, integralmente o parzialmente, tali contenuti senza il nostro consenso esplicito.</p>
         </div>
         
-        <div id="5" class="section">
-            <h2>Privacy e Dati</h2>
-            <p><strong>Space Games Studio™</strong> si impegna a proteggere la privacy e la sicurezza degli utenti che interagiscono con il bot <strong>Profile</strong>. L'utilizzo del bot non richiede la raccolta di informazioni personali private o sensibili. Tuttavia, per garantire il corretto funzionamento e migliorare l'esperienza utente, il bot potrebbe raccogliere alcune informazioni pubbliche e tecniche accessibili a chiunque, come:
-                <li>Il nome utente</li>
-                <li>L'id utente</li>
-                <li>La data di creazione dell'account</li>
-                <li>L'immagine della tua foto profilo</li>
-                <li>Eventuali interazioni e comandi inviati per il corretto funzionamento del bot.</li>
-                <br><br>
-                Queste informazioni <u>non</u> includono dati sensibili, come indirizzi email, numeri di telefono o altre informazioni private. Le informazioni raccolte non verranno mai vendute, scambiate o condivise con terze parti senza il consenso esplicito dell'utente.</p>
+        <div class="warning-section">
+            <h2>Avviso Importante</h2>
+            <p><strong>Space Games Studio™</strong> non è responsabile per eventuali danni diretti, indiretti o consequenziali derivanti dall'uso del bot. Inoltre, non siamo responsabili per interruzioni temporanee dei servizi, anche se dovuti a manutenzione, aggiornamenti o problemi tecnici.</p>
         </div>
-        
-        <div id="6" class="section">
-            <h2>Account e sicurezza</h2>
-            <p>La sicurezza degli account e la protezione dei dati personali sono essenziali per garantire un'esperienza sicura e piacevole con il bot <strong>Profile</strong> di <strong>Space Games Studio™</strong>. Ogni utente è responsabile della sicurezza del proprio account e delle informazioni di accesso. È fondamentale utilizzare una password robusta e unica e, se possibile, abilitare l'autenticazione a due fattori (2FA) per una protezione aggiuntiva. La condivisione delle credenziali di accesso con altre persone o l'uso di metodi non ufficiali per accedere al bot possono compromettere la sicurezza dell'account e devono essere evitati.<br><br><strong>Space Games Studio™</strong> non è responsabile per eventuali accessi non autorizzati o per la perdita di dati derivanti da una cattiva gestione della sicurezza dell'account.<br><br>Per motivi di sicurezza e per prevenire attività dannose, <strong>Space Games Studio™</strong> si riserva il diritto di sospendere o disabilitare temporaneamente gli account che risultano compromessi o che violano le regole di sicurezza previste.
-            </p>
-        </div>
-    </div>
-
-    <div class="warning-section">
-        <h2>Avvertenze Legali</h2>
-        <p><strong>Space Games Studio™</strong> si impegna a rispettare tutte le normative legali applicabili, ma non può essere ritenuto responsabile per danni diretti o indiretti derivanti dall'uso del bot. Gli utenti devono essere consapevoli dei rischi associati all'uso di software di terze parti e di internet in generale, inclusi i rischi per la sicurezza e la privacy.</p>
-        <p><strong>Nota:</strong> Utilizzando il bot, accetti di sollevare <strong>Space Games Studio™</strong> da qualsiasi responsabilità legale derivante da danni o danni indiretti, inclusi danni ai dispositivi e al software dell'utente.</p>
     </div>
 </body>
 </html>
